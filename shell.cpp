@@ -5,7 +5,7 @@
 */
 /*** Compile instruction: g++ shell.cpp -o shell -lreadline ***/
 
-#include "shellfunc.h"	//Self-made
+#include "shellfunc.h"
 
 using namespace std;
 
@@ -40,7 +40,7 @@ int ReadCommand(string temp, int& i, char ** argv, int (&stats)[3], string& file
 	string arg;
 	char *cstr;
 	int argc=0;
-    do{
+	do{
 		arg=NextToken(temp, i);
 		if(!arg.compare("<")){
 			filein=NextToken(temp,i);
